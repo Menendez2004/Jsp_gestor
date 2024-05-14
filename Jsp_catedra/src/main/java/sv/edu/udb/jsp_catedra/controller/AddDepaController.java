@@ -2,6 +2,7 @@ package sv.edu.udb.jsp_catedra.controller;
 
 import java.io.*;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -22,7 +23,8 @@ public class AddDepaController extends HttpServlet {
 
         try {
             adm.addDepa(depaBeans);
-            System.out.println("Succes: department added");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/add_depa.jsp");
+            rd.forward(request, response);
         }catch (Exception e) {
             System.out.println("ERROR: " + e.getMessage());
         }

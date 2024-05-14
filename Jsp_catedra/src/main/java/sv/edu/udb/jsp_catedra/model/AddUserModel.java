@@ -24,8 +24,8 @@ public class AddUserModel {
             ps.setString(2, usersBeans.getFirst_name());
             ps.setString(3, usersBeans.getLast_name());
             ps.setString(4, usersBeans.getDepartment());
-            ps.setString(5, usersBeans.getUsername());
-            ps.setString(6, usersBeans.getTypeUser());
+            ps.setString(5, usersBeans.getTypeUser());
+            ps.setString(6, usersBeans.getUsername());
             ps.setString(7, usersBeans.getPassword());
             affectedRows = ps.executeUpdate();
 

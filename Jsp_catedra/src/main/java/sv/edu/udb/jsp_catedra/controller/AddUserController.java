@@ -3,6 +3,7 @@ package sv.edu.udb.jsp_catedra.controller;
 import java.io.*;
 import java.sql.SQLException;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -28,7 +29,8 @@ public class AddUserController extends HttpServlet {
 
         try {
             addUserModel.addUser(usersBeans);
-            System.out.println("Successfully added user");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/add_user.jsp");
+            rd.forward(request, response);
         } catch (Exception e) {
             System.out.println("Exception occurred: " + e.getMessage());
         }

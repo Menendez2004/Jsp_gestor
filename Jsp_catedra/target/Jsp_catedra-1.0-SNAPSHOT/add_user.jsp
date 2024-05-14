@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Daniel
-  Date: 08/05/2024
-  Time: 10:04 a. m.
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="sv.edu.udb.jsp_catedra.model.SelectModel"%>
 <%@ page import="java.util.ArrayList"%>
@@ -27,26 +20,26 @@
     <div class="sticky top-4 z-10 w-64 bg-white p-4 rounded-lg w-[20rem]">
         <div class="items-center justify-center lg:justify-start p-2 hidden md:flex text-[#59656F] text-2xl">
             <i class="fa-solid fa-book"></i>
-            <h2 class="font-black ml-2 hidden lg:block">Gestión de notas</h2>
+            <h2 class="font-black ml-2 hidden lg:block">Gestión de tickets</h2>
         </div>
         <div class="md:mt-5 p-2 flex justify-around md:block">
-            <a class="flex p-4 items-center text-[#59656F] rounded-md my-1 justify-center cursor-pointer lg:justify-start" href="index.jsp">
+            <a class="flex p-4 items-center text-[#59656F] rounded-md my-1 justify-center cursor-pointer lg:justify-start" href="admin.jsp">
                 <i class="fa-solid fa-house"></i>
                 <h3 class="ml-2 hidden lg:block">Inicio</h3>
             </a>
-            <a class="flex p-4 items-center rounded-md my-1 bg-[#59656F] text-white justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="add_student.jsp">
+            <a class="flex p-4 items-center rounded-md my-1 bg-[#59656F] text-white justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="add_user.jsp">
                 <i class="fa-solid fa-user-tie"></i>
                 <h3 class="ml-2 hidden lg:block">Añadir usuarios</h3>
             </a>
-            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="add_grade.jsp">
+            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="add_depa.jsp">
                 <i class="fa-solid fa-pencil"></i>
                 <h3 class="ml-2 hidden hidden lg:block">Añadir departamento</h3>
             </a>
-            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="students_view.jsp">
+            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="cases_views.jsp">
                 <i class="fa-solid fa-id-card-clip"></i>
                 <h3 class="ml-2 hidden hidden lg:block">Ver casos</h3>
             </a>
-            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="subjects_view.jsp">
+            <a class="flex p-4 items-center rounded-md my-1 text-[#59656F] justify-center lg:justify-start cursor-pointer hover:font-bold ease-in duration-100" href="users_views.jsp">
                 <i class="fa-solid fa-book"></i>
                 <h3 class="ml-2 hidden hidden lg:block">Ver usuarios</h3>
             </a>

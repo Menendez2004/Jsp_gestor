@@ -6,6 +6,8 @@ public class UsersBeans {
     public String first_name;
     public String last_name;
     public String department;
+
+
     public String typeUser;
     public String Username;
     public String Password;

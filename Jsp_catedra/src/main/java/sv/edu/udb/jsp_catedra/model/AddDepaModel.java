@@ -9,10 +9,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AddDepaModel {
+
     public void addDepa(DepaBeans depaBeans){
         Connection conn;
         PreparedStatement ps;
-        ResultSet rs;
         int RowsAffected=0;
 
         try {

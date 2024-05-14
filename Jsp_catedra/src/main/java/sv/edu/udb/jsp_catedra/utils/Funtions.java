@@ -1,8 +1,12 @@
 package sv.edu.udb.jsp_catedra.utils;
 
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
 import java.util.Random;
 
 public class Funtions {
+
 
     public String generateUserCode(String firstName, String lastName) {
         // Obtener las dos primeras letras del nombre y apellido
@@ -39,6 +43,7 @@ public class Funtions {
         }
         return code;
     }
+
 
 
 
